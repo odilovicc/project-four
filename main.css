@@ -39,4 +39,8 @@
 
 .search-button i:hover {
   color: #000;
+}
+
+.red-shadow {
+  filter: drop-shadow(-6px 9px 24px rgba(238, 67, 67, 0.68));
 }/*# sourceMappingURL=main.css.map */

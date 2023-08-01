@@ -6,8 +6,8 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="main.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-yVnD7h2DZ9nZ+G1v6S1X6gHrY8g1U1v7J2M8m7qXO7v9QsP9HqU1PQ1dV5N9y5D9C6ZsW9V7zY5B5P5n9e9y5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-yVnD7h2DZ9nZ+G1v6S1X6gHrY8g1U1v7J2M8m7qXO7v9QsP9HqU1PQ1dV5N9y5D9C6ZsW9V7zY5B5P5n9e9y5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +18,26 @@
 <!-- Menu -->
 
 <div class="container mx-auto py-12">
-    <div class="flex items-center gap-24">
-        <div><img src="/assets/logo.svg" alt=""></div>
-        <div class="mx-auto">
-            <ul class="flex gap-12 justify-center">
+    <div class="flex items-center lg:gap-24">
+        <div class="px-10 lg:px-0 flex items-center justify-between">
+            <img src="/assets/logo.svg" alt="">
+            <div id="menu" class="z-50 bg-white w-full h-screen fixed right-0 top-0 transform translate-x-full overflow-y-auto transition-transform duration-200 ease-in-out">
+                <button id="close" class="absolute top-0 right-0 p-4"><i class="fas fa-times"></i></button>
+                <div class="relative">
+                    <ul class="w-screen absolute top-72 text-center">
+                        <li><a href="#" class="hover:text-[#F55253] transition duration-200">Home</a></li>
+                        <li><a href="#" class="hover:text-[#F55253] transition duration-200">Menu</a></li>
+                        <li><a href="#" class="hover:text-[#F55253] transition duration-200">Service</a></li>
+                        <li><a href="#" class="hover:text-[#F55253] transition duration-200">Shop</a></li>
+                    </ul>
+                </div>
+                <!-- Добавьте дополнительные пункты меню при необходимости -->
+            </div>
+            <button id="toggle" class="p-4 block lg:hidden ml-48"><i class="fas fa-bars"></i></button>
+        </div>
+        
+        <div class="lg:mx-auto hidden lg:block">
+            <ul class="hidden lg:flex gap-12 justify-center">
                 <li><a href="#" class="hover:text-[#F55253] transition duration-200">Home</a></li>
                 <li><a href="#" class="hover:text-[#F55253] transition duration-200">Menu</a></li>
                 <li><a href="#" class="hover:text-[#F55253] transition duration-200">Service</a></li>
@@ -29,7 +45,7 @@
             </ul>
         </div>
         <div>
-            <div class="search-container flex items-center">
+            <div class="hidden lg:flex search-container items-center">
                 <input type="text" class="p-5 px-10 border-md ui-shadow navbar-search rounded-lg placeholder:font-medium placeholder:text-black focus:outline-none" placeholder="Search">
                 <button class="search-button my-auto z-10">
                     <img src="/assets/market.svg" alt="">
@@ -84,6 +100,32 @@
     </section>
 </div>
 <!-- Serve section -->
+
+<!-- Why section -->
+
+<div class="container mx-auto px-36 pt-8 py-20">
+    <div class="px-4 lg:px-0 flex gap-32 items-center"> 
+        <div class="w-1/2 ">
+            <img src="/assets/why image.png" alt="">
+            <!-- <div class="card-shadow px-12 py-16 rounded-md w-max">
+                <h1 class="font-semibold text-xl text-center">Melting Cheese</h1>
+                <h4 class="text-[#676767] ml-12 mb-12 mt-2">Red Stovery</h4>
+                <img src="/assets/strawberry-card.png" class="mx-auto" alt="">
+                
+            </div> -->
+        </div>
+        <div class="w-1/2 ml-auto my-auto">
+            <h4 class="font-medium text-[#03A66B] uppercase mb-4">why choose us</h4>
+            <h1 class="text-4xl font-extrabold mb-6 ">Find Favorites and Discover New Ones</h1>
+            <p class="text-[#676767] mb-16">At vero eos et accusamus et iusto odio dignissimos ducimus blanditiis praesen voluptatum deleniti.</p>
+            <a href="#" class="text-white transition duration-200 bg-[#F55556] rounded-xl px-11 py-6">Order now</a>
+        </div>
+    </div>
+</div>
+
+<!-- Why section -->
+
+<script>  const menu = document.querySelector('#menu');  const toggle = document.querySelector('#toggle');  const close = document.querySelector('#close');  toggle.addEventListener('click', () => {    menu.classList.toggle('translate-x-full');  });  close.addEventListener('click', () => {    menu.classList.add('translate-x-full');  });</script>
 
 </body>
 </html>

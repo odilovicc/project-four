@@ -19,7 +19,7 @@
 
 <div class="container mx-auto py-12">
     <div class="flex items-center lg:gap-24">
-        <div class="px-10 lg:px-0 flex items-center justify-between">
+        <div class="pl-5 lg:px-0 flex items-center justify-between">
             <img src="/assets/logo.svg" alt="">
             <div id="menu" class="z-50 bg-white w-full h-screen fixed right-0 top-0 transform translate-x-full overflow-y-auto transition-transform duration-200 ease-in-out">
                 <button id="close" class="absolute top-0 right-0 p-4"><i class="fas fa-times"></i></button>
@@ -60,14 +60,14 @@
 <!-- Hero section -->
 
 <section class="container mx-auto py-10 h-screen">
-    <div class="flex items-center gap-10">
-        <div class="w-1/2">
-            <h1 class="bg-[#FDECEC] text-[#F55556] w-max px-5 py-4 mb-5 rounded-full font-medium">More than faster</h1>
+    <div class="block lg:flex items-center gap-10">
+        <div class="w-full text-center lg:text-start lg:w-1/2 mx-auto">
+            <h1 class="bg-[#FDECEC] text-[#F55556] mx-auto lg:mx-0 w-max px-5 py-4 mb-5 rounded-full font-medium">More than faster</h1>
             <h1 class="text-7xl font-bold mb-5">Groceries delivered in as little as <span class="text-[#f55556]"> 2 hours</span></h1>
             <p class="text-[#676767] mb-16">Grocen atssures fresh grocery every morning to your family without getting out in this pandemic.</p>
             <a href="#" class="text-white red-shadow transition duration-200 hover:filter-none bg-[#F55556] rounded-xl px-11 py-6">Order now</a>
         </div>
-        <div>
+        <div class="hidden lg:block">
             <img src="/assets/Header Image.png" alt="">
         </div>
     </div>
@@ -76,22 +76,22 @@
 <!-- Hero section -->
 
 <!-- Serve section -->
-<div class="bg-[#FEF5F5]">
+<div class="bg-[#FEF5F5] w-full">
     <section class="container mx-auto py-24 ">
         <h4 class="text-[#F54748] font-medium text-center">What we Serve</h4>
         <h1 class="text-4xl capitalize text-center mt-3 font-bold">fruit and vegetable delivered to your home</h1>
-        <div class="flex justify-center items-center gap-16 mt-20">
-            <div class="before-rectangle w-1/4 rounded-2xl text-center bg-white px-7 py-14">
+        <div class="block lg:flex justify-center items-center gap-16 mt-20">
+            <div class="before-rectangle w-72 mx-auto mb-4 lg:w-1/4 rounded-2xl text-center bg-white px-7 py-14">
                 <div><img src="/assets/shipping.svg" class="mx-auto" alt=""></div>
                 <h1 class="font-semibold text-2xl mb-4">Free shipping</h1>
                 <p class="text-[#676767]">Enjoy Order in a hand using the fresness of groceries</p>
             </div>
-            <div class="w-1/4 rounded-2xl text-center bg-white px-7 py-14">
+            <div class="w-72 mx-auto mb-4 lg:w-1/4 rounded-2xl text-center bg-white px-7 py-14">
                 <div><img src="/assets/Group 1737.svg" class="mx-auto" alt=""></div>
                 <h1 class="font-semibold text-2xl mb-4">15 days returns</h1>
                 <p class="text-[#676767]">Order in a handy way using the freshness of the groceries.</p>
             </div>
-            <div class="w-1/4 rounded-2xl text-center bg-white px-7 py-14">
+            <div class="w-72 mx-auto mb-4 lg:w-1/4 rounded-2xl text-center bg-white px-7 py-14">
                 <div><img src="/assets/Group 1736.svg" class="mx-auto" alt=""></div>
                 <h1 class="font-semibold text-2xl mb-4">Free shipping</h1>
                 <p class="text-[#676767]">If you get rotten items - return immediately to us.</p>
@@ -103,9 +103,9 @@
 
 <!-- Why section -->
 
-<div class="container mx-auto px-36 pt-8 py-20">
-    <div class="px-4 lg:px-0 flex gap-32 items-center"> 
-        <div class="w-1/2 ">
+<div class="container mx-auto px-12 lg:px-36 pt-8 lg:py-20">
+    <div class="lg:px-0 block lg:flex gap-32 items-center"> 
+        <div class="w-full lg:w-1/2 mb-4 mx-auto">
             <img src="/assets/why image.png" alt="">
             <!-- <div class="card-shadow px-12 py-16 rounded-md w-max">
                 <h1 class="font-semibold text-xl text-center">Melting Cheese</h1>
@@ -114,7 +114,7 @@
                 
             </div> -->
         </div>
-        <div class="w-1/2 ml-auto my-auto">
+        <div class="w-full lg:w-1/2 lg:text-start text-center">
             <h4 class="font-medium text-[#03A66B] uppercase mb-4">why choose us</h4>
             <h1 class="text-4xl font-extrabold mb-6 ">Find Favorites and Discover New Ones</h1>
             <p class="text-[#676767] mb-16">At vero eos et accusamus et iusto odio dignissimos ducimus blanditiis praesen voluptatum deleniti.</p>
@@ -124,8 +124,68 @@
 </div>
 
 <!-- Why section -->
+<!-- Delivery section -->
 
-<script>  const menu = document.querySelector('#menu');  const toggle = document.querySelector('#toggle');  const close = document.querySelector('#close');  toggle.addEventListener('click', () => {    menu.classList.toggle('translate-x-full');  });  close.addEventListener('click', () => {    menu.classList.add('translate-x-full');  });</script>
+
+<section class="container mx-auto px-14 mb-24 mt-20 lg:mt-0 lg:px-40">
+    <div class="block lg:flex gap-12 items-center">
+        <div class="w-full text-center lg:text-start">
+            <span class="uppercase text-[#F9BA45]">home delivery</span>
+            <h1 class="text-4xl mt-4 text-[#2e2e2e] mb-7 font-bold">Sit at Home We Will Take Care Your Order</h1>
+            <p class="text-[#676767] mb-9">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos </p>
+            <a href="#" class="px-9 text-xl py-4 border-2 w-max rounded-2xl border-[#E53536] text-[#E53536]">Explore Now</a>
+        </div>
+        <div class="text-center">
+            <div class="relative inline-block">
+              <div class="px-5 py-4 top-1/3 bg-white hidden -right-40 z-10 w-56 rounded-lg absolute" style="box-shadow: 0px 40px 100px -25px rgba(0, 0, 0, 0.12);">
+                <img src="/assets/bike-delivery.svg" class="w-full h-full mx-auto" alt="">
+                <h1 class="font-bold text-xl mt-0 mb-2">Bike delivery</h1>
+                <p class="text-[#676767] text-sm">Bicycle service ensures that your packages arrive quickly</p>
+              </div>
+              <img src="/assets/negrvachha.svg" class="w-full h-full" alt="">
+            </div>
+          </div>
+    </div>
+</section>
+
+<!-- Delivery section -->
+
+
+<!-- Download app section -->
+
+<div class="bg-[#fef5f5] mb-20">
+    <div class="container mx-auto py-10">
+        <div class="block lg:text-start text-center lg:flex items-center gap-32 justify-center">
+            <div><img src="/assets/mobile mockup.svg" class="mx-auto lg:mx-0 my-10 lg:my-0" alt=""></div>
+            <div class="w-full lg:w-1/2 px-10 lg:px-0">
+                <h4 class="text-[#F54748] text-xl mb-4">Download our app</h4>
+                <h1 class="font-bold text-4xl mb-4">Get the Groceries app order more easily.</h1>
+                <p class="text-[#676767] text-lg mb-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                <div class="lg:flex items-center gap-12 ">
+                <a href="#" class="border-2 transition duration-200 hover:border-transparent hover:scale-110 hover:shadow-2xl hover:rotate-[360deg] lg:mb-0 mb-5 py-8 px-10 text-[#2e2e2e] block text-xl rounded-2xl border-[#EEDCDC]"><img src="/assets/app store.svg" class="mr-2 inline-block"> App Store</a>
+                <a href="#" class="border-2 transition duration-200 hover:border-transparent hover:scale-110 hover:shadow-2xl hover:rotate-[360deg] py-8 px-10 text-[#2e2e2e] block text-xl rounded-2xl border-[#EEDCDC]"><img src="/assets/playmarket.svg" class="mr-2 inline-block"> Play Market</a>
+                </div>
+            </div>
+        </div>
+    </div>        
+</div>
+
+<!-- Download app section -->
+
+
+<script>
+    const menu = document.querySelector('#menu');
+const toggle = document.querySelector('#toggle');
+const close = document.querySelector('#close');
+
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('translate-x-full');
+});
+
+close.addEventListener('click', () => {
+  menu.classList.add('translate-x-full');
+});
+</script>
 
 </body>
 </html>
